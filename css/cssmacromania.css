@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(#fafafa, #aaaaaa);
+}
+
+h1 {
+    text-align: center;
+    background-color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    float: left;
+    max-width: 20%;
+    height: auto;
+    margin-left: 80px;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    margin-right: 280px;
+    padding: 10px 32px;
+    align-self: flex-end;
+}
+
+.Description p {
+    border: 2px solid rgb(167, 167, 167);
+    border-radius: 5px;
+}
+
+.button {
+    position: relative;
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 60px;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.including {
+    margin: 0;
+    padding: 0;
+}
+
+.lolli {
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+h2 {
+    display: flex;
+    margin-right: 280px;
+    padding: 0px 60px;
+    align-self: flex-end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h3 {
+    margin-left: 50px;
+}
+
+.Plateformes p {
+    margin-right: 20px;
+}
+
+.Langues p {
+    margin-right: 20px;
+}
+
+.Bord {
+    border: 2px solid rgb(167, 167, 167);
+    border-radius: 5px;
+}
+
+/* Image slider */
