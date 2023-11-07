@@ -44,31 +44,50 @@
     <button class="button"><a href="https://store.steampowered.com/sub/469">Achetez Maintenent sur Steam</a></button>
     <h2>Information Complémentaires</h2>
 
-    <div class="Genres">
-        <p class="Bord">Action, Free-To-Play</p>
-    </div>
-    <div class="Plateformes">
-        <h3>Disponible sur:</h3>
-        <p class="Bord">Microsoft Windows, Xbox360, PlayStation 3, MacOS X, Linux</p>
-    </div>
-    <div class="Langues">
-        <h3>Disponible en:</h3>
-        <p class="Bord"> Anglais, Français, Allemand, Russe, Danois, Néerlandais, Finnois, Italien, Japonais, Norvégien,
-            Polonais, Portugais du Portugal, Chinois simplifié, Espagnol - Espagne, Suédois, Chinois traditionnel</p>
+    <div class="other">
+        <div class="Genres">
+            <h3>Genres: </h3>
+            <p class="Bord">Action, Free-To-Play</p>
         </div>
+        <div class="Plateformes">
+            <h3>Disponible sur:</h3>
+            <p class="Bord">Microsoft Windows, Xbox360, PlayStation 3, MacOS X, Linux</p>
+        </div>
+        <div class="Langues">
+            <h3>Disponible en:</h3>
+            <p class="Bord"> Anglais, Français, Allemand, Russe, Danois, Néerlandais, Finnois, Italien, Japonais, Norvégien,
+                Polonais, Portugais du Portugal, Chinois simplifié, Espagnol - Espagne, Suédois, Chinois traditionnel</p>
+            </div>
+    </div>
 
-  <form action="submit_form.php" method="post">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br><br>
-  <label for="subject">Subject:</label><br>
-  <input type="text" id="subject" name="subject"><br><br>
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message"></textarea><br><br>
-  <input type="submit" value="Send">
-</form>
+  <div class="form">
+    <form action="submit_form.php" method="post">
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name" placeholder="Votre nom..."><br><br>
+        <label for="subject">sujet:</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Votre requête..."><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Votre message..."></textarea><br><br>
+        <input type="submit" value="Send">
+      </form>
+  </div>
+
+
     <footer>
 
     </footer>
+    <div class="cookie-card">
+        <span class="title">🍪 Cookie Notice</span>
+        <p class="description">We use cookies to ensure that we give you the best experience on our website. <a href="#">Read cookies policies</a>. </p>
+        <div class="actions">
+            <button class="pref">
+                Manage your preferences
+            </button>
+            <button class="accept">
+                Accept
+            </button>
+        </div>
+    </div>
 </body>
 
 
