@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon"
+        href="https://www.micromania.fr/on/demandware.static/Sites-Micromania-Site/-/default/dw9b1c1c95/images/favicons/favicon-96x96.png">
+    <title>Micromania - OrangeBox</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li class="lolli"><img src="img/logo/micromaniaLogo.png" alt="logo"></li>
+            <li class="lolli"><a href="#home">Accueil</a></li>
+            <li class="lolli"><a href="#news">Jeux</a></li>
+            <li class="lolli"><a href="#contact">Accessoires</a></li>
+            <li class="lolli" style="float:right"><a class="active" href="#about">Se connecter</a></li>
+            <li class="lolli" style="float:right"><a class="active" href="">Se connecter</a></li>
+        </ul>
+    </header>
+    <p>Total visits: <span id="visit-counter"></span></p>
+    <h1>The OrangeBox</h1>
+    <img src="img/TheOrangeBox.jfif" width="100" alt="Image de la orange box">
+
+    <div class="Description">
+        <p><b>Le pack The Orange Box inclut cinq fantastiques jeux développés par Valve : Half-Life 2 ; Half-Life 2:
+                Episode
+                One ; Half-Life 2: Episode Two ; Team Fortress 2, la suite du jeu qui a rendu célèbre le combat
+                multijoueur
+                par classe ; et Portal, un habile mélange de jeu d'énigmes, d'aventure et de FPS qui vous entrainera
+                dans
+                une expérience sans pareille.</b></p>
+    </div>
+    <div class="including">
+        <p> Ce pack contient:<br>   Team Fortress 2<br>   Half-Life 2<br>   Half-Life 2: Episode One<br>   Half-life 2:
+            Episode Two<br>   Portal</p>
+    </div>
+
+    <h2 class="price">19,50€</h2>
+    <button class="button">Achetez Maintenent</button>
+    <h2>Information Complémentaires</h2>
+
+    <div class="Genres">
+        <p class="Bord">Action, Free-To-Play</p>
+    </div>
+    <div class="Plateformes">
+        <h3>Disponible sur:</h3>
+        <p class="Bord">Microsoft Windows, Xbox360, PlayStation 3, MacOS X, Linux</p>
+    </div>
+    <div class="Langues">
+        <h3>Disponible en:</h3>
+        <p class="Bord"> Anglais, Français, Allemand, Russe, Danois, Néerlandais, Finnois, Italien, Japonais, Norvégien,
+            Polonais, Portugais du Portugal, Chinois simplifié, Espagnol - Espagne, Suédois, Chinois traditionnel</p>
+        </div>
+
+  <form action="submit_form.php" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="subject">Subject:</label><br>
+  <input type="text" id="subject" name="subject"><br><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message"></textarea><br><br>
+  <input type="submit" value="Send">
+</form>
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>
+
+<script>
+  document.getElementById("visit-counter").innerText = localStorage.getItem("visits");
+</script>
+
+<script>
+    if(localStorage.getItem("visits")) {
+      localStorage.setItem("visits", parseInt(localStorage.getItem("visits")) + 1);
+    } else {
+      localStorage.setItem("visits", 1);
+    }
+</script>  
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
