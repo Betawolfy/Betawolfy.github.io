@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="shortcut icon"
         href="https://www.micromania.fr/on/demandware.static/Sites-Micromania-Site/-/default/dw9b1c1c95/images/favicons/favicon-96x96.png">
     <title>Micromania - OrangeBox</title>
@@ -61,15 +62,28 @@
     </div>
 
   <div class="form">
-    <form action="submit_form.php" method="post">
-        <label for="name">Nom:</label><br>
-        <input type="text" id="name" name="name" placeholder="Votre nom..."><br><br>
-        <label for="subject">sujet:</label><br>
-        <input type="text" id="subject" name="subject" placeholder="Votre requête..."><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" placeholder="Votre message..."></textarea><br><br>
-        <input type="submit" value="Send">
-      </form>
+    <div class="container">
+        <h1>Contact us!</h1>
+        <form target="_blank" action="https://formsubmit.co/e4d51e7817aa3abfb6ee623a07db1363" method="POST">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <h3>Votre nom:</h3>
+                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+              </div>
+              <div class="col">
+                <h3>Votre adresse Email:</h3>
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <h3>Votre message:</h3>
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        </form>
+      </div>
   </div>
 
 
