@@ -3,14 +3,16 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="./AVU/__toCredit/EnlistedIcon.png" type="image/png"/>
+  <link rel="shortcut icon" href="./AVU/__toCredit/EnlistedIcon.png" type="image/png" />
   <link rel="icon" href="./AVU/__toCredit/EnlistedIcon.png" type="image/png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#343a40" />
 
 
   <meta content="Betawolfy" property="og:title" />
-  <meta content="Hello! I am Betawolfy (Vincent), i'm 18 years old! I'm a Devlopper that have ADHD, but it doesn't stop me to create!" property="og:description" />
+  <meta
+    content="Hello! I am Betawolfy (Vincent), i'm 18 years old! I'm a Devlopper that have ADHD, but it doesn't stop me to create!"
+    property="og:description" />
   <meta content="http://betawolfy.xyz/" property="og:url" />
   <meta content="https://i.imgur.com/3OtSV0X.png" property="og:image" />
   <meta content="#3b0000" data-react-helmet="true" name="theme-color" />
@@ -23,11 +25,17 @@
   <title>Betawolfy</title>
   <style>
     body {
-      background-color: #faf8ef;
+      transition: background-color 2.5s ease;
     }
 
-    h5 {
+    body.light-theme {
+      background-color: #faf8ef;
       color: #343a40;
+    }
+
+    body.dark-theme {
+      background-color: #343a40;
+      color: #faf8ef;
     }
 
     .name {
@@ -102,17 +110,77 @@
       text-decoration: none;
       cursor: pointer;
     }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    hr.dotted {
+      border-top: 3px dotted #202020;
+
+      body.light-theme .btn-outline-dark {
+        background-color: #faf8ef;
+        color: #343a40;
+        border-color: #343a40;
+      }
+
+      body.light-theme .btn-outline-dark:hover {
+        background-color: #343a40;
+        color: #faf8ef;
+      }
+
+      body.dark-theme .btn-outline-dark {
+        background-color: #ffffff;
+        color: #faf8ef;
+        border-color: #faf8ef;
+      }
+
+      body.dark-theme .btn-outline-dark:hover {
+        background-color: #faf8ef;
+        color: #343a40;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Betawolfy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+        <button id="theme-toggle" class="btn btn-light">Toggle Theme</button>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container" id="Home">
     <div class="media mt-5">
       <img src="/assets/img/me.gif" class="m-3" alt="image" width="100px" height="100px">
       <div class="media-body m-2">
         <h5 class="align-items-center mt-2">Betawolfy</h5>
         <p>Hello!
-          I am Betawolfy (Vincent), i'm 18 years old! I'm a Devlopper that have ADHD, but it doesn't stop me to create!<br>Currently coding something to make a community more united!</p>
+          I am Betawolfy (Vincent), i'm 18 years old! I'm a Devlopper that have ADHD, but it doesn't stop me to
+          create!<br>Currently coding something to make a community more united!</p>
       </div>
     </div>
     <!-- Trigger/Open The Modal -->
@@ -129,34 +197,35 @@
 
 </div> -->
     <center>
-      <h1>News:</h1>
+      <h1>Let me tell more about me:</h1>
     </center>
     <div class="container">
       <div class="media-body m-2">
-        <h5 class="align-items-center mt-2">11/03/2024</h5>
-        <p> I'll retry to remake this site in a terminal theme. but for now, it will looks like this.</p>
+        <h5 class="align-items-center mt-2">Programming langage/Packages</h5>
+        <h6 class="align-items-center mt-2">Javascript</h6>
+        <p>The first langage i used was Javascript. I'm working with this langage since 2018.
+          <br>I'll not say that i have a BIG BIG knowledge of JS, but it's enough to make lots of my projects, and i'm
+          determined to learn more.
+        </p>
+        <h6 class="align-items-center mt-2">Discord.js</h6>
+        <p><a href="https://discord.js.org/">Discord.js</a> is a way to use Javascript to communicate with Discord Bots
+          API.
+          <br>I began working with this package in 2018.
+        </p>
+        <h6 class="align-items-center mt-2">Arduino</h6>
+        <p>During High school, i learned Arduino langage. It's a mix of python and C++ use to control electronic
+          components and a microcontroller.
+          <br>One of my project was to make a thermometer that detect tempreature automatically so if it's cold if can
+          turn on a relay to simulate a radiator.
+        </p>
       </div>
     </div>
   </div>
 
-  <!--------------------Principal link---------------------------->
-
-  <div class="mt-4">
-    <a href="https://github.com/Betawolfy" class="btn btn-outline-dark btn-block" role="button" target="_blank"><i
-        class="fab fa-github">&nbsp;</i>Github</a>
-    <!--<br>
-  <a href="#" class="btn btn-outline-dark btn-block" role="button" target="_blank"><i class="fab fa-twitter">&nbsp;</i>twitter</a>-->
-    <br>
-    <a href="https://twitter.com/betawolfy_" class="btn btn-outline-dark btn-block" role="button" target="_blank"><i
-        class="fab fa-twitter">&nbsp;</i>twitter</a>
-    <br>
-    <a href="mailto://betawolfy@antivirusunite.com" class="btn btn-outline-dark btn-block" role="button"
-      target="_blank"><i class="fa fa-code">&nbsp;</i>Professional Email address</a>
-  </div>
-  <br>
+  <hr class="dotted">
   <!--------------------Project--------------------------->
 
-  <center>
+  <center id="Projects">
     <h1>Project:</h1>
   </center>
   <div class="mt-4">
@@ -166,7 +235,7 @@
         <p>Blacklist and warning system for Ponytown regiment | Work In Progress</p>
         <a href="https://github.com/Betawolfy/BLCKlist" class="btn btn-outline-dark btn-block" role="button"
           target="_blank"><i class="fab fa-github">&nbsp;</i>depot github BLCKlist</a>
-          <a href="https://betawolfy.xyz/BLCKlistWRNs.pdf" class="btn btn-outline-dark btn-block" role="button"
+        <a href="https://betawolfy.xyz/BLCKlistWRNs.pdf" class="btn btn-outline-dark btn-block" role="button"
           target="_blank"><i class="fa fa-file-pdf">&nbsp;</i>explaination in PDF</a>
       </div>
     </div>
@@ -174,52 +243,81 @@
     <div class="container">
       <div class="media-body m-2">
         <h5 class="align-items-center mt-2">Personal work : Antivirus, Unite!</h5>
-        <p>A group i made in the online MMORPG: Ponytown. <br>The site contain my first HTML code and my first use of Cookies/local data storage.</p>
-        <a href="https://antivirusunite.com" class="btn btn-outline-dark btn-block" role="button"
-        target="_blank"><i class="fa fa-globe">&nbsp;</i>antivirusunite.com</a>
+        <p>A group i made in the online MMORPG: Ponytown. <br>The site contain my first HTML code and my first use of
+          Cookies/local data storage.</p>
+        <a href="https://antivirusunite.com" class="btn btn-outline-dark btn-block" role="button" target="_blank"><i
+            class="fa fa-globe">&nbsp;</i>antivirusunite.com</a>
+      </div>
     </div>
-  </div>
 
     <div class="container">
       <div class="media-body m-2">
         <h5 class="align-items-center mt-2">Personal work : Botty.js</h5>
         <p>The first thing i did in Javascript. <br>A french discord bot to keep track of partners.</p>
         <a href="https://github.com/Betawolfy/botty.js" class="btn btn-outline-dark btn-block" role="button"
-        target="_blank"><i class="fab fa-github">&nbsp;</i>Botty.js Github repo</a>
+          target="_blank"><i class="fab fa-github">&nbsp;</i>Botty.js Github repo</a>
+      </div>
     </div>
-  </div>
 
     <div class="container">
       <div class="media-body m-2">
         <h5 class="align-items-center mt-2">School work: Java</h5>
         <p>Currently learning Java. you can see my work here:</p>
         <a href="https://github.com/Betawolfy/workAboutJava" class="btn btn-outline-dark btn-block" role="button"
-        target="_blank"><i class="fab fa-github">&nbsp;</i>BLCKlist Github repo</a>
+          target="_blank"><i class="fab fa-github">&nbsp;</i>BLCKlist Github repo</a>
+      </div>
     </div>
-  </div>
 
     <div class="container">
       <div class="media-body m-2">
         <h5 class="align-items-center mt-2">School work: Arduino</h5>
         <p>During High school, i learned Arduino langage. <br>One of my project was to make a thermometer.</p>
-        <a href="https://github.com/Betawolfy/Mesure-temperature-relay-finale" class="btn btn-outline-dark btn-block" role="button"
-        target="_blank"><i class="fab fa-github">&nbsp;</i>Thermometer Github repo</a>
+        <a href="https://github.com/Betawolfy/Mesure-temperature-relay-finale" class="btn btn-outline-dark btn-block"
+          role="button" target="_blank"><i class="fab fa-github">&nbsp;</i>Thermometer Github repo</a>
+      </div>
     </div>
-  </div>
+
+    <hr class="dotted">
+    <!--------------------Principal link---------------------------->
+
+    <div class="container">
+      <div class="media-body m-2">
+        <center>
+          <h1>Contact me:</h1>
+        </center>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="mt-4">
+        <a href="https://github.com/Betawolfy" class="btn btn-outline-dark btn-block" role="button" target="_blank"><i
+            class="fab fa-github">&nbsp;</i>Github</a>
+      </div>
+      <!--<br>
+    <a href="#" class="btn btn-outline-dark btn-block" role="button" target="_blank"><i class="fab fa-twitter">&nbsp;</i>twitter</a>-->
+      <br>
+      <a href="https://twitter.com/betawolfy_" class="btn btn-outline-dark btn-block" role="button" target="_blank"><i
+          class="fab fa-twitter">&nbsp;</i>twitter</a>
+      <br>
+      <a href="mailto://betawolfy@antivirusunite.com" class="btn btn-outline-dark btn-block" role="button"
+        target="_blank"><i class="fa fa-code">&nbsp;</i>Professional Email address</a>
+    </div>
+    <br>
 
 
 
-  <!--------------------Footer---------------------------->
-  <div class="footer mt-5">
-    <hr />
-    <h6>Made With <span class="love">♥</span> by Betawofy!</h6>
-    <h6>
-      Proudly Hosted By
-      <a href="https://github.com/" class="name" target="_blank"> Github :) </a>
-      <a id="email" href="mailto:contact.betawolft@gmail.com"> <i class="fa fa-envelope"> </i> </a>
-    </h6>
+    <!--------------------Footer---------------------------->
   </div>
-  </div>
+  <footer>
+    <div class="footer mt-5">
+      <hr />
+      <h6>Made With <span class="love">♥</span> by me!</h6>
+      <h6>
+        Proudly Hosted By
+        <a href="https://github.com/" class="name" target="_blank"> Github :) </a>
+      </h6>
+    </div>
+  </footer>
 </body>
 
 </html>
@@ -250,4 +348,11 @@
       modal.style.display = "none";
     }
   }
+</script>
+
+<script>
+  const themeToggleButton = document.getElementById('theme-toggle');
+  themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+  });
 </script>
