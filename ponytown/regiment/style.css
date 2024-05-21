@@ -3,54 +3,70 @@ html {
   width: 100%;
 }
 
-       body{
-         background-color: #faf8ef;
-       }
-       h5{
-             color: #343a40;
-       }
-       .name{
-           color: #343a40;
-       }
-       .love{
-           color: #343a40 !important;
-       }
-       /*----------------- Mail-------------------- */
-       #email{
-           text-decoration: none;
-           float: right;
-           color:#343a40;
-       }
-       .footer{
-           margin-top: 5% !important;
-           margin-bottom: 10px;
-       }
-       @media (max-width: 479px) {
-            .footer{
-            margin-top: 35% !important;
-            }
-       }
-       
-  .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+body {
+  background-color: #faf8ef;
+}
+
+h5 {
+  color: #343a40;
+}
+
+.name {
+  color: #343a40;
+}
+
+.love {
+  color: #343a40 !important;
+}
+
+/*----------------- Mail-------------------- */
+#email {
+  text-decoration: none;
+  float: right;
+  color: #343a40;
+}
+
+.footer {
+  margin-top: 5% !important;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 479px) {
+  .footer {
+    margin-top: 35% !important;
+  }
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
+  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -67,6 +83,7 @@ html {
   text-decoration: none;
   cursor: pointer;
 }
+
 .collapsible {
   background-color: #eee;
   color: #444;
@@ -80,7 +97,8 @@ html {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
   background-color: #ccc;
 }
 
@@ -98,8 +116,9 @@ html {
   color: white;
   padding: 4px 8px;
   text-align: center;
-  border-radius:5px;
+  border-radius: 5px;
 }
+
 .badgeT {
   background-color: #ceae73;
   color: #050505;
@@ -107,6 +126,7 @@ html {
   text-align: center;
   border-radius: 3px;
 }
+
 .badge {
   background-color: black;
   color: white;
@@ -139,25 +159,53 @@ html {
 }
 
 /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Container for skill bars */
 .container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  width: 100%;
+  /* Full width */
+  background-color: #ddd;
+  /* Grey background */
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+  text-align: right;
+  /* Right-align text */
+  padding-top: 10px;
+  /* Add top padding */
+  padding-bottom: 10px;
+  /* Add bottom padding */
+  color: white;
+  /* White text color */
 }
 
-.html {width: 90%; background-color: #04AA6D;} /* Green */
-.css {width: 45%; background-color: #2196F3;} /* Blue */
-.js {width: 25%; background-color: #f44336;} /* Red */
-.php {width: 60%; background-color: #808080;} /* Dark Grey */
+.html {
+  width: 90%;
+  background-color: #04AA6D;
+}
+
+/* Green */
+.css {
+  width: 45%;
+  background-color: #2196F3;
+}
+
+/* Blue */
+.js {
+  width: 25%;
+  background-color: #f44336;
+}
+
+/* Red */
+.php {
+  width: 60%;
+  background-color: #808080;
+}
+
+/* Dark Grey */
 
 /* Three columns side by side */
 .column {
@@ -186,7 +234,8 @@ html {
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
