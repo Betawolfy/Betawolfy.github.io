@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/EnlistedIcon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#343a40" />
+
+
+    <meta content="Betawolfy" property="og:title" />
+    <meta
+        content="Hello! I am Betawolfy (Vincent), i'm 18 years old! I'm a Devlopper that have ADHD, but it doesn't stop me to create! Currently coding something to make a community more united!"
+        property="og:description" />
+    <meta content="http://betawolfy.xyz/" property="og:url" />
+    <meta content="https://i.imgur.com/Tapq7Pu.gif" property="og:image" />
+    <meta content="#3b0000" data-react-helmet="true" name="theme-color" />
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./otherStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/vapor/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/johan-perso/discordwhois-library/index.js"></script>
+    <title>My bot commmission!</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand pl-4" href="#">Betawolfy - commissions</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Questions">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Modules">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Prices">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- <button id="theme-toggle" class="btn btn-light">Toggle Theme</button> -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="container" id="Home">
+            <div class="media mt-5">
+                <img src="../img/icons/sparkles_3d.png" class="m-3" alt="image" width="100px" height="100px">
+                <div class="media-body m-2">
+                    <h5 class="align-items-center mt-2">Point System</h5>
+                    <p>A simple points system, with a leaderboard! Can be used for a lot of things!<br>Use a internal
+                        API.</p>
+                </div>
+            </div>
+
+            <div class="media-body m-2">
+                <h3 class="align-items-center mt-2">Here's how The point system works.</h3>
+                <h6 class="align-items-center mt-2"></h6>
+                <p>
+                    This module comes with 4 main commands:
+                <ul>
+                    <a href="#addPoints">
+                        <li>/points-add</li>
+                    </a>
+            <a href="#removePoints"><li>/points-remove</li></a>
+                    <li>/points</li>
+                    <li>/leaderboard</li>
+                </ul>
+                </p>
+                <div class="container">
+                    <h4 class="align-items-center mt-2" id="addPoints">1. /points-add</h4>
+                    <div class="container">
+                        <p>Syntax: <code>/points-add user:{@user} numberPoint:{amount}</code>
+                            <br>Permission required: <code>permission.points.add</code> or <code>permission.all</code>
+                        </p>
+                    </div>
+                    <p>
+                        This commands adds points to a user. <br>It can be used to reward a user for attending an event,
+                        or
+                        if the member filled a quest.
+                    </p>
+                    <h6>Exemple:</h6>
+                    <img src="./img/points/Feature_Points_AddPoints.png" alt="" class="img-fluid" width="700">
+                </div>
+
+                <div class="container">
+                    <h4 class="align-items-center mt-2" id="removePoints">2. /points-remove</h4>
+                    <div class="container">
+                        <p>Syntax: <code>/points-remove user:{@user} numberPoint:{amount}</code>
+                            <br>Permission required: <code>permission.points.remove</code> or <code>permission.all</code>
+                        </p>
+                    </div>
+                    <p>
+                        This commands removes points to a user.
+                    </p>
+                    <h6>Exemple:</h6>
+                    <img src="./img/points/Feature_Points_RemovePoints.png" alt="" class="img-fluid" width="700">
+                    </p>
+                </div>
+
+                <div class="container">
+                    <h4 class="align-items-center mt-2">3. /points</h4>
+                    <div class="container">
+                        <p>Syntax: <code>/points user:{@user}</code>
+                            <br>Permission required: <i>No permission required.</i>
+                        </p>
+                    </div>
+                    <p>
+                        This commands shows the points of a user. <br>It can be used to see how many points a user have.
+                    </p>
+                    <h6>Exemple:</h6>
+                    <img src="./img/points/Feature_Points_Points.png" alt="" class="img-fluid" width="700">
+            </div>
+        </div>
+    </div>
+    </div>
