@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rêvaria • Wiki</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://s3.csh.rit.edu/csh-pastel-bootstrap/4.3.1/dist/csh-pastel-bootstrap.min.css" media="screen">
+
+    <meta property="og:title" content="Rêvaria • Wiki">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://betawolfy.xyz/revaria-wiki/">
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/1338671026975801364/78a8fcfcee74b9ccad2eaef1a2d34581.webp">
+    <meta property="og:description" content="Official wiki for Rêvaria.">
+    <meta property="og:site_name" content="Rêvaria Wiki">
+    <meta name="theme-color" content="#7289DA">
+
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="d-flex align-items-center mb-4">
+            <img src="https://cdn.discordapp.com/icons/1338671026975801364/78a8fcfcee74b9ccad2eaef1a2d34581.webp"
+            alt="Rêvaria Logo" loading="eager" class="me-5" style="width: 64px; height: 64px; border-radius: 50%;">
+            <h1 class="display-4 mb-0" style="font-family: 'Dancing Script', cursive;"> Rêvaria • Wiki</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#home" class="list-group-item list-group-item-action active" data-bs-toggle="tab">Home / Last updates</a>
+                    <a href="#mining" class="list-group-item list-group-item-action" data-bs-toggle="tab">Mining</a>
+                    <a href="#fishing" class="list-group-item list-group-item-action" data-bs-toggle="tab">Fishing</a>
+                    <a href="#harvesting" class="list-group-item list-group-item-action" data-bs-toggle="tab">Harvesting - WIP</a>
+                    <a href="#credits" class="list-group-item list-group-item-action" data-bs-toggle="tab">Credits</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="home">
+                        <article class="border rounded p-4">
+                            <!-- Add nav tabs -->
+                            <ul class="nav nav-tabs mb-3" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab">Overview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#changelogs" type="button" role="tab">Changelogs</button>
+                                </li>
+                            </ul>
+
+                            <!-- Tab content -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="overview">
+                                    <h2>Actions in Rêvaria</h2>
+                                    <p class="text-muted">Last edited:
+                                        <script>document.write(new Date().toLocaleDateString())</script>
+                                    </p>
+                                    <p>
+                                        On Rêvaria, you play as a rêvarian. As a rêvarian, you can perform various actions to
+                                        gather resources and interact with the world around you.
+                                    </p>
+                                    <ul>
+                                        <li>Mining - Extract valuable minerals and ores</li>
+                                        <li>Fishing - Catch various Fish</li>
+                                        <li>Harvesting - Not implemented yet.</li>
+                                    </ul>
+                                    <p>
+                                        We'll also let you know probabilities of finding certain resources, and what tools
+                                        you'll need to perform each action.
+                                    </p>
+                                    <div class="alert alert-danger mt-4 d-flex align-items-center" role="alert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                            class="me-2">
+                                            <path fill="currentColor"
+                                                d="M1 21L12 2l11 19zm11-3q.425 0 .713-.288T13 17t-.288-.712T12 16t-.712.288T11 17t.288.713T12 18m-1-3h2v-5h-2z" />
+                                        </svg>
+                                        <div>
+                                            <strong>Note:</strong> Each action requires specific tools and skills. Make sure you
+                                            have the necessary equipment before attempting any activity.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="changelogs">
+                                    <h2>Changelogs</h2>
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <h5 class="mb-1">February, 14th 2025</h5>
+                                            <p class="mb-1">• Initial wiki release</p>
+                                            <p class="mb-1">• Added Mining documentation</p>
+                                            <p class="mb-1">• Added Fishing documentation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tab-pane fade" id="mining">
+                        <article class="border rounded p-4">
+                            <h2>Mining</h2>
+                            <p class="text-muted">Last edited:
+                                <script>document.write(new Date().toLocaleDateString())</script>
+                            </p>
+
+                            <h4>Pickaxes and Bonuses</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Pickaxe</th>
+                                            <th>Bonus</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img loading="lazy" src="" alt=""
+                                                style="width: 24px; height: 24px; vertical-align: middle;"></td>
+                                            <td>Diamond Pickaxe</td>
+                                            <td>+1.0 (100%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="" alt=""
+                                                style="width: 24px; height: 24px; vertical-align: middle;"></td>
+                                            <td>Gold Pickaxe</td>
+                                            <td>+0.2 (20%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="" alt=""
+                                                style="width: 24px; height: 24px; vertical-align: middle;"></td>
+                                            <td>Stone Pickaxe</td>
+                                            <td>+0.1 (10%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4>Pity System</h4>
+                            <ul>
+                                <li>Counter increases with each common stone obtained</li>
+                                <li>Guarantees a rare or legendary reward after 15 stones</li>
+                                <li>Counter resets after obtaining a rare or legendary item</li>
+                            </ul>
+
+                            <div class="alert alert-info">
+                                <div>
+                                    <strong>Note: </strong> The pity system is implemented in the mining system to
+                                    ensure players get a rare or legendary item after a certain number of common stones.
+                                    The pity counter resets after obtaining a rare or legendary item.
+                                </div>
+                            </div>
+
+                            <h4>Base Probabilities (without bonus)</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Rarity</th>
+                                            <th>Chance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339293425597681754.webp?size=32&quality=lossless" alt="Legendary icons"
+                                                style="vertical-align: middle;">Legendary</td>
+                                            <td>1%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339293415199871067.webp?size=32&quality=lossless" alt="Rare icons"
+                                                style="vertical-align: middle;">Rare</td>
+                                            <td>5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339283692643680378.webp?size=32&quality=lossless" alt="Common icons"
+                                                style="vertical-align: middle;">Common</td>
+                                            <td>94%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339848014558134302.webp?size=32&quality=lossless" alt="The doggo"
+                                                style="vertical-align: middle;">Stone or Dog Stone</td>
+                                            <td>64%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="alert alert-info mt-4 d-flex align-items-center" role="info">
+                                <div>
+                                    <strong>Note:</strong> Stone and common are the same as for now. This might be changed in the future for a more diverse mining experience.
+                                </div>
+                            </div>
+
+                            <h4>Bonus Probabilities</h4>
+                            <p>Pickaxe bonus is applied as a modifier (bonusModifier = pickaxeBonus * 0.1)</p>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Diamond Pickaxe</h5>
+                                    <ul>
+                                        <li>Legendary: 2%</li>
+                                        <li>Rare: 6%</li>
+                                        <li>Common: 30%</li>
+                                        <li>Stone/Dog Stone: 62%</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Gold Pickaxe</h5>
+                                    <ul>
+                                        <li>Legendary: 1.2%</li>
+                                        <li>Rare: 5.2%</li>
+                                        <li>Common: 30%</li>
+                                        <li>Stone/Dog Stone: 63.6%</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Stone Pickaxe</h5>
+                                    <ul>
+                                        <li>Legendary: 1.1%</li>
+                                        <li>Rare: 5.1%</li>
+                                        <li>Common: 30%</li>
+                                        <li>Stone/Dog Stone: 63.8%</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-danger mt-4 d-flex align-items-center" role="alert">
+                                <div>
+                                    <strong>Warning:</strong> Please not that these data are subject to change and are
+                                    only for reference purposes.
+                                </div>
+                            </div>
+
+                            <h4>Special Case: Dog Stone</h4>
+                            <ul>
+                                <li>10% chance to get a Dog Stone instead of a normal stone</li>
+                                <li>Does not increment the pity counter</li>
+                            </ul>
+
+                            <h4>Durability</h4>
+                            <ul>
+                                <li>Each pickaxe has 10 uses</li>
+                                <li>Breaks after 10th use</li>
+                                <li>Must be replaced after breaking</li>
+                            </ul>
+
+                        </article>
+                    </div>
+                    <div class="tab-pane fade" id="fishing">
+                        <article class="border rounded p-4">
+                            <h2>Fishing</h2>
+                            <p class="text-muted">Last edited: <script>document.write(new Date().toLocaleDateString())</script></p>
+                            <p>Fishing is an activity where players can catch various aquatic creatures from different
+                                water bodies in Rêvaria.</p>
+
+                            <h3>Fishing Probability Analysis</h3>
+
+                            <h4>Fishing Rods and Bonuses</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Rod</th>
+                                            <th>Bonus</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339333699744829441.webp?size=32&quality=lossless"
+                                                alt="Enchanted Fishing Rod"
+                                                style="vertical-align: middle;"> 
+                                                Enchanted Fishing Rod</td>
+                                            <td>+0.5 (50%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339333685773729884.webp?size=32&quality=lossless"
+                                                alt="Reinforced Fishing Rod"
+                                                style="vertical-align: middle;"> 
+                                                Reinforced Fishing Rod</td>
+                                            <td>+0.15 (15%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339308736207913001.webp?size=32&quality=lossless"
+                                                alt="Basic Fishing Rod"
+                                                style="vertical-align: middle;"> 
+                                                Basic Fishing Rod</td>
+                                            <td>+0.0 (0%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4>Base Probabilities (without bonus)</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Rarity</th>
+                                            <th>Chance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339301185915719710.png"
+                                                    alt="Super rare Fish"
+                                                    style="width: 24px; height: 24px; vertical-align: middle;"> Super
+                                                Rare Fish</td>
+                                            <td>1%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339301078490939535.png"
+                                                    alt="Rare Fish"
+                                                    style="width: 24px; height: 24px; vertical-align: middle;"> Rare
+                                                Fish</td>
+                                            <td>5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339300953593090111.png"
+                                                    alt="Common Fish"
+                                                    style="width: 24px; height: 24px; vertical-align: middle;"> Common
+                                                Fish</td>
+                                            <td>30%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nothing</td>
+                                            <td>64%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4>Bonus Probabilities</h4>
+                            <p>Fishing rod bonus is applied directly to the chance roll</p>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Enchanted Rod (+50%)</h5>
+                                    <ul>
+                                        <li>Super Rare Fish: 1.5%</li>
+                                        <li>Rare Fish: 5.5%</li>
+                                        <li>Common Fish: 30%</li>
+                                        <li>Nothing: 63%</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Reinforced Rod (+15%)</h5>
+                                    <ul>
+                                        <li>Super Rare Fish: 1.15%</li>
+                                        <li>Rare Fish: 5.15%</li>
+                                        <li>Common Fish: 30%</li>
+                                        <li>Nothing: 63.7%</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Basic Rod (+0%)</h5>
+                                    <ul>
+                                        <li>Super Rare Fish: 1%</li>
+                                        <li>Rare Fish: 5%</li>
+                                        <li>Common Fish: 30%</li>
+                                        <li>Nothing: 64%</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4>Selling Prices</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Fish</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339301185915719710.png"
+                                                    alt="Super rare Fish"
+                                                    style="width: 24px; height: 24px; vertical-align: middle;"> Super
+                                                Rare Fish</td>
+                                            <td>200</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339301078490939535.png"
+                                                    alt="Rare Fish"
+                                                    style="width: 24px; height: 24px; vertical-align: middle;"> Rare
+                                                Fish</td>
+                                            <td>50</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img loading="lazy" src="https://cdn.discordapp.com/emojis/1339300953593090111.png"
+                                                    alt="Common Fish"
+                                                    style="width: 24px; height: 24px; vertical-align: middle;"> Common
+                                                Fish</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4>Durability</h4>
+                            <ul>
+                                <li>Each fishing rod has 10 uses</li>
+                                <li>Breaks after 10th use</li>
+                                <li>Must be replaced after breaking</li>
+                            </ul>
+
+                            <h4>Cooldown</h4>
+                            <ul>
+                                <li>1 minute between each fishing attempt</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="tab-pane fade" id="harvesting">
+                        <article class="border rounded p-4">
+                            <h2>Harvesting</h2>
+                            <p class="text-muted">Last edited: N/A</p>
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Coming Soon!</strong> This feature has not been implemented yet. Check back
+                                later for updates on harvesting mechanics and probabilities.
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tab-pane fade" id="credits">
+                        <article class="border rounded p-4">
+                            <h2>Credits</h2>
+                            <p class="text-muted">Last edited:
+                                <script>document.write(new Date().toLocaleDateString())</script>
+                            </p>
+                            <h3>Contributors:</h3>
+                            <hr class="my-2">
+                            <h4>Original uniserse, characters, lore, etc...</h4>
+                            <ul>
+                                <li>Original concept by <strong>someru_thaboy</strong>.</li>
+                            </ul>
+                            
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
